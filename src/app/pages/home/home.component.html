@@ -1,22 +1,45 @@
 <app-navbar></app-navbar>
-<section id="hero" class="bg-gray-900 py-16">
-  <!-- Image with fadeIn animation -->
-  <img src="assets/img/hero-img.jpg" alt="" class="mx-auto animate-fadeIn" />
+<section
+  id="hero"
+  class="relative h-screen py-10 bg-black overflow-hidden"
+  style="height: 400px"
+>
+  <!-- Background Image with fadeIn animation -->
+  <img
+    src="https://i.pinimg.com/736x/1c/35/84/1c3584980101a97ae0be8711e73a3ea9.jpg"
+    alt="Hero Image"
+    class="absolute top-0 left-0 w-full h-full object-cover animate-fadeIn"
+  />
 
-  <!-- Container with fadeUp animation and a 100ms delay -->
+  <!-- Semi-Transparent Overlay -->
   <div
-    class="container mx-auto flex flex-col items-center justify-center text-center animate-fadeUp"
+    class="absolute top-0 left-0 w-full h-full bg-black opacity-80 z-10"
+  ></div>
+
+  <!-- Content with fadeUp animation -->
+  <div
+    class="relative z-20 container mx-auto h-full flex flex-col items-center justify-center text-center animate-fadeUp"
     style="animation-delay: 100ms"
   >
-    <h2 class="text-white text-4xl font-bold">I am Nathan Hlungwani</h2>
-    <p class="text-white  flex justify-center" style="font-size: 20px;">
-        <span
-          class="inline-block overflow-hidden whitespace-nowrap border-r-2 border-white animate-typecycle"
-          style="animation-delay: 0s"
-        >
-          System Developer
-        </span>
-      </p>
+    <br />
+
+    <h2
+      class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold"
+    >
+      I am Nathan Hlungwani
+    </h2>
+
+    <p
+      class="text-white flex justify-center text-lg mt-2"
+      style="font-size: 20px; margin-top: 10px;"
+    >
+      <span
+        class="inline-block overflow-hidden whitespace-nowrap border-r-2 border-white animate-typecycle"
+        style="animation-delay: 0s"
+      >
+        System Developer
+      </span>
+    </p>
   </div>
 </section>
 

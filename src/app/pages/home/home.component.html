@@ -43,80 +43,103 @@
   </div>
 </section>
 
-
-<section id="about" class="about section" style="margin-top: 100px; margin-bottom: 50px;">
-
-  <div class="container mx-auto px-4 animate-fade-up delay-100">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="flex flex-col">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div class="lg:w-5/12">
-            <img src="https://i.pinimg.com/736x/1c/35/84/1c3584980101a97ae0be8711e73a3ea9.jpg" class="w-full h-auto" alt="">
+<!-- style="margin-top: 100px; margin-bottom: 50px;" -->
+<section id="about" class="py-12 px-6" style="background-color: whitesmoke; ">
+  <div class="max-w-6xl mx-auto shadow-lg rounded-lg p-8" data-aos="fade-up" data-aos-delay="100">
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Left Column: Profile & Skills -->
+      <div>
+        <div class="grid grid-cols-2 gap-6 items-center">
+          <!-- Profile Image -->
+          <div>
+            <img src="https://i.pinimg.com/736x/1c/35/84/1c3584980101a97ae0be8711e73a3ea9.jpg" class="w-full rounded-lg shadow-lg" alt="Profile Image">
           </div>
-          <div class="lg:w-7/12">
-            <p><strong>Name: </strong><span>Morgan Freeman</span></p>
-            <p><strong>Profile: </strong><span>full stack developer</span></p>
-            <p><strong>Email: </strong><span>contact&#64;example.com</span></p>
-            <p><strong>Phone: </strong><span>(617) 557-0089</span></p>
+          <!-- Profile Info -->
+          <div class="space-y-2">
+            <p><strong>Name:</strong> <span>Morgan Freeman</span></p>
+            <p><strong>Profile:</strong> <span>Full Stack Developer</span></p>
+            <p><strong>Email:</strong> <span>contact"&#64;example.com</span></p>
+            <p><strong>Phone:</strong> <span>(617) 557-0089</span></p>
           </div>
         </div>
 
-        <div class="skills-content mt-8">
-          <h5 class="text-xl font-semibold">Skills</h5>
+        <!-- Skills Section -->
+        <div class="mt-6">
+          <h5 class="text-lg font-semibold uppercase mb-4">Skills</h5>
 
-          <div class="progress mt-4">
-            <span class="flex justify-between"><span>HTML</span> <span class="font-semibold">100%</span></span>
-            <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-              <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+          <div class="space-y-4">
+            <!-- Skill Bar: HTML -->
+            <div>
+              <div class="flex justify-between text-sm font-semibold">
+                <span>HTML</span>
+                <span>100%</span>
+              </div>
+              <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                <div class="h-full bg-blue-500 animate-progress" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Bar: CSS -->
+            <div>
+              <div class="flex justify-between text-sm font-semibold">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                <div class="h-full bg-blue-400 animate-progress" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Bar: JavaScript -->
+            <div>
+              <div class="flex justify-between text-sm font-semibold">
+                <span>JavaScript</span>
+                <span>75%</span>
+              </div>
+              <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                <div class="h-full bg-yellow-400 animate-progress" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Bar: Photoshop -->
+            <div>
+              <div class="flex justify-between text-sm font-semibold">
+                <span>Photoshop</span>
+                <span>55%</span>
+              </div>
+              <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                <div class="h-full bg-green-400 animate-progress" style="width: 55%;"></div>
+              </div>
             </div>
           </div>
-
-          <div class="progress mt-4">
-            <span class="flex justify-between"><span>CSS</span> <span class="font-semibold">90%</span></span>
-            <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-              <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-
-          <div class="progress mt-4">
-            <span class="flex justify-between"><span>JavaScript</span> <span class="font-semibold">75%</span></span>
-            <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-              <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
-            </div>
-          </div>
-
-          <div class="progress mt-4">
-            <span class="flex justify-between"><span>Photoshop</span> <span class="font-semibold">55%</span></span>
-            <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-              <div class="bg-red-500 h-2 rounded-full" style="width: 55%"></div>
-            </div>
-          </div>
-
         </div>
       </div>
 
-      <div class="flex flex-col">
-        <div class="about-me">
-          <h4 class="text-xl font-semibold">About me</h4>
-          <p class="mt-4">
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-            imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-            porttitor accumsan tincidunt.
-          </p>
-          <p class="mt-4">
-            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
-            volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-          </p>
-          <p class="mt-4">
-            Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
-            porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-          </p>
-        </div>
+      <!-- Right Column: About Me -->
+      <div>
+        <h4 class="text-2xl font-bold relative pb-2 mb-6">
+          About Me
+          <span class="block w-16 h-1 bg-blue-500 absolute bottom-0 left-0"></span>
+        </h4>
+        <p class="text-lg mb-4">
+          Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+          imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+        </p>
+        <p class="text-lg mb-4">
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
+          volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+        </p>
+        <p class="text-lg">
+          Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+        </p>
       </div>
     </div>
-  </div>
 
+  </div>
 </section>
+
 
 
 <!-- "Developer" appears second -->

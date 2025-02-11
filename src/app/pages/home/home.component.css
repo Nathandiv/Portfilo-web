@@ -126,3 +126,17 @@ section.slider {
     transform: rotate(90deg) translate(-.25rem);
   }
 }
+
+@keyframes fillProgress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress-width);
+  }
+}
+
+.animate-progress {
+  animation: fillProgress 15s ease-in-out infinite;
+}
+

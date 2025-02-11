@@ -66,3 +66,63 @@ section.slider {
   0% { transform: translateX(0); }
   80% { transform: translateX(calc(-100px * 6)); } /* Adjusted proportionally */
 }
+
+
+.accordion *,
+.accordion *::before,
+.accordion *::after {
+  box-sizing: border-box;
+}
+
+.accordion .tab {
+  position: relative;
+}
+.accordion .tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.accordion .tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.accordion .tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+.accordion .tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.accordion .tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.accordion .tab__content p {
+  margin: 0;
+  padding: 1rem;
+  color: var(--primary); /* Black text */
+}
+.accordion .tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+.accordion.accordion--radio {
+  --theme: var(--primary);
+}
+.accordion .tab input:not(:checked) + .tab__label:hover::after {
+  animation: accordion-bounce .5s infinite;
+}
+@keyframes accordion-bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}

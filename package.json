@@ -18,7 +18,10 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@ionic/angular": "^8.4.3",
     "flowbite": "^3.1.1",
+    "framer-motion": "^12.4.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

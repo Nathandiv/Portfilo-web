@@ -137,7 +137,7 @@ section.slider {
 }
 
 .animate-progress {
-  animation: fillProgress 15s ease-in-out infinite;
+  animation: fillProgress 15s ease-in-out forwards;
 }
 
 

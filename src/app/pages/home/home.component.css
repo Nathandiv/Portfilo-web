@@ -245,3 +245,14 @@ section.slider {
   }
 }
 
+@media (max-width: 640px) {
+  .introp {
+    margin-top: -100px; /* Adjust to your preferred value */
+  }
+}
+
+@media (max-width: 400px) {
+  .introp {
+    margin-top: -150px; /* Adjust to your preferred value */
+  }
+}

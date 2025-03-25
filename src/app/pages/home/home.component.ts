@@ -25,8 +25,8 @@ export class HomeComponent implements OnInit {
     // Initialize Typed.js
     const typed = new Typed('.typed', {
       strings: [
-        "System Developement",
-        "Full Stack Developer",
+        "System Developer",
+        "Full-Stack Developer",
         "Web Developer",
         "Mobile Developer",
         "Software Developer",

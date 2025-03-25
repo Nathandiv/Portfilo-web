@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
         "System Developer",
         "Full-Stack Developer",
         "Web Developer",
-        "Mobile Developer",
+        "Mobile App Developer",
         "Software Developer",
       ],
       typeSpeed: 80,

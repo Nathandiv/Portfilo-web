@@ -249,6 +249,10 @@ section.slider {
   .introp {
     margin-top: -100px; /* Adjust to your preferred value */
   }
+
+  .bio {
+    margin-top: 12px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -263,4 +267,9 @@ section.slider {
   .head2 {
     font-size: 5px;
   }
+
+  .bio {
+    margin-top: 12px;
+  }
+  
 }

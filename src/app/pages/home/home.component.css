@@ -255,4 +255,12 @@ section.slider {
   .introp {
     margin-top: -150px; /* Adjust to your preferred value */
   }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .head2 {
+    font-size: 5px;
+  }
 }

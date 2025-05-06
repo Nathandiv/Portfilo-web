@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-loader',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './loader.component.css'
 })
 export class LoaderComponent {
+
+  @Input() isLoading: boolean = false
+
 
 }

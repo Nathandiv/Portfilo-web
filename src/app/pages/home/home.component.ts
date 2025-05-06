@@ -4,16 +4,24 @@ import { FooterComponent } from "../../Shared-Ui/footer/footer.component";
 import AOS from 'aos';
 import Typed from 'typed.js';
 import 'aos/dist/aos.css';
+import { LoaderComponent } from '../loader/loader.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent,LoaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
+
+  isLoading = true;
+
   ngOnInit(): void {
+    // Initialize the loader
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2000); 
     // Initialize AOS
     AOS.init({
       offset: 200,

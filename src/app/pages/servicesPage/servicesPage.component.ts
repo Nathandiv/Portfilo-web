@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/c
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import * as AOS from 'aos';
+import { NavbarComponent } from '../../Shared-Ui/navbar/navbar.component';
+import { FooterComponent } from '../../Shared-Ui/footer/footer.component';
 
 interface Service {
   id: string;
@@ -56,7 +58,7 @@ interface ConsultationForm {
 @Component({
   selector: 'app-services-page',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule,NavbarComponent,FooterComponent],
   templateUrl: './servicesPage.component.html',
   styleUrls: ['./servicesPage.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

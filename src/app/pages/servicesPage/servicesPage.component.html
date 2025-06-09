@@ -21,11 +21,16 @@
             class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-black hover:bg-gray-800 text-white font-semibold rounded-lg transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-gray-300">
             Get Free Consultation
           </button>
-          <button 
-           href="#projects"
+          
+            
+
+              <button 
             class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-black text-black hover:bg-black hover:text-white font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-gray-300">
-            View Project
+<a href="" >View Project</a>
+            
           </button>
+
+        
         </div>
       </div>
     </div>
@@ -241,7 +246,7 @@
       </div>
 
       <!-- Modal Body -->
-      <form (ngSubmit)="submitQuote()" class="p-6 space-y-6">
+      <form action="https://api.web3forms.com/submit" method="POST" (ngSubmit)="submitQuote()" class="p-6 space-y-6">
         <!-- Personal Information -->
              <input
           type="hidden"
@@ -446,7 +451,7 @@
       </div>
 
       <!-- Modal Body -->
-      <form (ngSubmit)="submitConsultation()" class="p-6 space-y-6">
+      <form action="https://api.web3forms.com/submit" method="POST" (ngSubmit)="submitConsultation()" class="p-6 space-y-6">
         <!-- Personal Information -->
              <input
           type="hidden"

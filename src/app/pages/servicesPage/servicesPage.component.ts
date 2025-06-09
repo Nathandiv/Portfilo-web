@@ -102,7 +102,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       id: 'end-to-end',
       title: 'End-to-End Web & Mobile Application Development',
       subtitle: 'Bringing Your Digital Vision to Life, From Idea to Launch',
-      hook: 'From concept to deployment, we craft powerful web and mobile applications that engage users and drive business growth. We handle every step, so you can focus on your vision.',
+      hook: 'From concept to deployment, I craft powerful web and mobile applications that engage users and drive business growth. I handle every step, so you can focus on your vision.',
       features: [
         'Full lifecycle development: Discovery, design, development, testing, deployment',
         'Cross-platform compatibility (iOS, Android, Web)',
@@ -110,7 +110,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'User-centered design principles for intuitive experiences',
         'Agile development methodology for faster delivery'
       ],
-      usp: 'Our end-to-end approach means you have a single, reliable partner for your entire digital journey, from ideation to post-launch support.',
+      usp: 'My end-to-end approach means you have a single, reliable partner for your entire digital journey, from ideation to post-launch support.',
       icon: '🚀',
       color: 'primary'
     },
@@ -126,7 +126,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'Robust security protocols and data integrity',
         'Scalable enterprise-grade solutions'
       ],
-      usp: 'We don\'t just build software; we engineer solutions that seamlessly integrate with your business processes and scale with your growth.',
+      usp: 'I don\'t just build software; I engineer solutions that seamlessly integrate with your business processes and scale with your growth.',
       icon: '⚙️',
       color: 'secondary'
     },
@@ -134,7 +134,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       id: 'backend',
       title: 'Back-End Development',
       subtitle: 'The Robust Engine Powering Your Digital Success',
-      hook: 'A strong back-end is the invisible backbone of any successful application. We build secure, scalable, and high-performance server-side solutions that empower your front-end.',
+      hook: 'A strong back-end is the invisible backbone of any successful application. I build secure, scalable, and high-performance server-side solutions that empower your front-end.',
       features: [
         'API development (RESTful, GraphQL)',
         'Database design and optimization (SQL, NoSQL)',
@@ -142,7 +142,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'Microservices architecture and serverless computing',
         'Authentication and authorization systems'
       ],
-      usp: 'With expertise in cutting-edge technologies and a commitment to performance, we ensure your back-end is not just functional, but a competitive advantage.',
+      usp: 'With expertise in cutting-edge technologies and a commitment to performance, I ensure your back-end is not just functional, but a competitive advantage.',
       icon: '⚡',
       color: 'accent'
     },
@@ -150,7 +150,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       id: 'frontend',
       title: 'Front-End Development',
       subtitle: 'Captivating User Experiences That Drive Engagement',
-      hook: 'Create stunning, intuitive interfaces that your users will love. We combine beautiful design with seamless functionality to deliver exceptional user experiences.',
+      hook: 'Create stunning, intuitive interfaces that your users will love. I combine beautiful design with seamless functionality to deliver exceptional user experiences.',
       features: [
         'Responsive and intuitive UI/UX design',
         'Modern JavaScript frameworks (React, Angular, Vue.js)',
@@ -158,7 +158,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'Optimized performance for fast loading times',
         'Accessibility (WCAG) compliance'
       ],
-      usp: 'We craft front-end experiences that not only look beautiful but also convert visitors into loyal customers through thoughtful user experience design.',
+      usp: 'I craft front-end experiences that not only look beautiful but also convert visitors into loyal customers through thoughtful user experience design.',
       icon: '🎨',
       color: 'primary'
     },
@@ -166,7 +166,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       id: 'maintenance',
       title: 'Maintenance & Support',
       subtitle: 'Ensuring Your Applications Run Flawlessly, 24/7',
-      hook: 'Keep your applications running at peak performance with our comprehensive maintenance and support services. Peace of mind through ongoing excellence.',
+      hook: 'Keep your applications running at peak performance with my comprehensive maintenance and support services. Peace of mind through ongoing excellence.',
       features: [
         '24/7 monitoring and issue resolution',
         'Regular security updates and vulnerability patching',
@@ -174,7 +174,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'Feature enhancements and technical debt reduction',
         'Version control and backup management'
       ],
-      usp: 'Our proactive approach to maintenance means issues are resolved before they impact your users, ensuring maximum uptime and performance.',
+      usp: 'My proactive approach to maintenance means issues are resolved before they impact your users, ensuring maximum uptime and performance.',
       icon: '🛡️',
       color: 'secondary'
     },
@@ -182,7 +182,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       id: 'devops',
       title: 'DevOps Consulting & Implementation',
       subtitle: 'Accelerating Your Development Cycles, Delivering Faster & Smarter',
-      hook: 'Streamline your development process and accelerate time-to-market with our expert DevOps consulting and implementation services.',
+      hook: 'Streamline your development process and accelerate time-to-market with my expert in DevOps consulting and implementation services.',
       features: [
         'CI/CD pipeline setup and automation',
         'Infrastructure as Code (IaC) implementation',
@@ -190,7 +190,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'Local cloud migration strategies',
         'Monitoring and logging solutions'
       ],
-      usp: 'We don\'t just implement DevOps; we integrate it into your culture, fostering collaboration and efficiency that transforms your entire development lifecycle.',
+      usp: 'I don\'t just implement DevOps; I integrate it into your culture, fostering collaboration and efficiency that transforms your entire development lifecycle.',
       icon: '🔄',
       color: 'accent'
     },
@@ -198,7 +198,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
       id: 'consultations',
       title: 'Consultations & Strategy',
       subtitle: 'Expert Guidance to Navigate Your Digital Journey',
-      hook: 'Make informed decisions with expert technical guidance. Our strategic consultations help you choose the right technologies and approaches for your goals.',
+      hook: 'Make informed decisions with expert technical guidance. My strategic consultations help you choose the right technologies and approaches for your goals.',
       features: [
         'Technology stack recommendations',
         'Project feasibility studies and scope definition',
@@ -206,7 +206,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         'Digital transformation roadmaps',
         'Architectural design and planning'
       ],
-      usp: 'With years of experience across diverse industries in South Africa, we provide strategic insights that help you avoid costly mistakes and accelerate your success.',
+      usp: 'With years of experience across diverse industries in South Africa, I provide strategic insights that help you avoid costly mistakes and accelerate your success.',
       icon: '💡',
       color: 'primary'
     }
@@ -227,7 +227,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
     {
       step: 1,
       title: 'Discovery',
-      description: 'We dive deep into understanding your business goals, user needs, and technical requirements.',
+      description: 'I dive deep into understanding your business goals, user needs, and technical requirements.',
       icon: '🔍'
     },
     {
@@ -364,7 +364,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         files: this.selectedFiles.map(f => ({ name: f.name, size: f.size }))
       });
       
-      alert('Thank you! Your quote request has been submitted. We\'ll get back to you within 24 hours.');
+      alert('Thank you! Your quote request has been submitted. I\'ll get back to you within 24 hours.');
       this.closeQuoteModal();
       this.isSubmitting = false;
     }, 2000);
@@ -385,7 +385,7 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
         files: this.selectedConsultationFiles.map(f => ({ name: f.name, size: f.size }))
       });
       
-      alert('Thank you! Your consultation request has been submitted. We\'ll contact you within 24 hours to schedule your free consultation.');
+      alert('Thank you! Your consultation request has been submitted. I\'ll contact you within 24 hours to schedule your free consultation.');
       this.closeConsultationModal();
       this.isSubmittingConsultation = false;
     }, 2000);

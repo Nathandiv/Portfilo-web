@@ -370,26 +370,32 @@ export class ServicesPageComponent implements OnInit, OnDestroy {
     }, 2000);
   }
 
-  submitConsultation(): void {
-    if (!this.isConsultationFormValid()) {
-      alert('Please fill in all required fields.');
-      return;
-    }
-
-    this.isSubmittingConsultation = true;
-
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Consultation form submitted:', {
-        ...this.consultationForm,
-        files: this.selectedConsultationFiles.map(f => ({ name: f.name, size: f.size }))
-      });
-      
-      alert('Thank you! Your consultation request has been submitted. I\'ll contact you within 24 hours to schedule your free consultation.');
-      this.closeConsultationModal();
-      this.isSubmittingConsultation = false;
-    }, 2000);
+submitConsultation(): void {
+  if (!this.isConsultationFormValid()) {
+    alert('Please fill in all required fields.');
+    return;
   }
+
+  const formData = {
+    access_key: '18155a87-df5c-4465-b923-8cb64eb3e1b3',
+    firstName: this.consultationForm.firstName,
+    lastName: this.consultationForm.lastName,
+    email: this.consultationForm.email,
+    projectDescription: this.consultationForm.projectDescription
+  };
+
+  // this.http.post('https://api.web3forms.com/submit', formData).subscribe(
+  //   response => {
+  //     console.log('Form submitted!', response);
+  //     alert('Thank you! Your consultation request has been sent.');
+  //   },
+  //   error => {
+  //     console.error('Submission error', error);
+  //     alert('Oops! Something went wrong while sending your request.');
+  //   }
+  // );
+}
+
 
   private isFormValid(): boolean {
     return !!(

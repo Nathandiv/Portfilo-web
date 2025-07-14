@@ -434,267 +434,259 @@
           <br />
         </p>
 
-        <div
-          id="accordion-collapse"
-          class="shadow-lg shadow-black/80"
-          data-accordion="collapse"
-          style=""
-        >
-          <!-- Item 1 -->
-          <h2 id="accordion-collapse-heading-1">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
-              data-accordion-target="#accordion-collapse-body-1"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-1"
-            >
-              <span
-                ><strong>API Integration & Responsive Interfaces</strong></span
-              >
-              <svg
-                data-accordion-icon
-                class="w-3 h-3 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-1"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-1"
-          >
-            <div class="p-5 border border-b-0 border-black dark:border-black">
-              <p class="mb-2 text-black dark:text-black">
-                Designed and developed user-centric web and mobile applications
-                using HTML, CSS, and Angular, integrating APIs for efficient
-                data handling and responsive user experiences.
-              </p>
-            </div>
-          </div>
+      <div id="accordion-collapse" class="shadow-lg shadow-black/80">
+  <!-- Item 1 -->
+  <h2 id="accordion-collapse-heading-1">
+    <button
+      type="button"
+      (click)="togglePanel(1)"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
+      [attr.aria-expanded]="isActive(1)"
+      aria-controls="accordion-collapse-body-1"
+    >
+      <span><strong>API Integration & Responsive Interfaces</strong></span>
+      <svg
+        class="w-3 h-3 shrink-0 transform transition-transform duration-300"
+        [class.rotate-180]="isActive(1)"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-collapse-body-1"
+    [class.hidden]="!isActive(1)"
+    aria-labelledby="accordion-collapse-heading-1"
+  >
+    <div class="p-5 border border-b-0 border-black dark:border-black">
+      <p class="mb-2 text-black dark:text-black">
+        Designed and developed user-centric web and mobile applications using
+        HTML, CSS, and Angular, integrating APIs for efficient data handling and
+        responsive user experiences.
+      </p>
+    </div>
+  </div>
 
-          <!-- Item 2 -->
-          <h2 id="accordion-collapse-heading-2">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
-              data-accordion-target="#accordion-collapse-body-2"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-2"
-            >
-              <span><strong>Secure User Authentication</strong></span>
-              <svg
-                data-accordion-icon
-                class="w-3 h-3 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-2"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-2"
-          >
-            <div class="p-5 border border-b-0 text-black dark:text-black">
-              <p class="mb-2 text-black dark:text-black">
-                Implemented JWT-based authentication with JavaScript and MySQL,
-                enhancing security and session integrity.
-              </p>
-            </div>
-          </div>
+  <!-- Repeat Pattern Below for Item 2 - 6 -->
+  <h2 id="accordion-collapse-heading-2">
+    <button
+      type="button"
+      (click)="togglePanel(2)"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
+      [attr.aria-expanded]="isActive(2)"
+      aria-controls="accordion-collapse-body-2"
+    >
+      <span><strong>Secure User Authentication</strong></span>
+      <svg
+        class="w-3 h-3 shrink-0 transform transition-transform duration-300"
+        [class.rotate-180]="isActive(2)"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-collapse-body-2"
+    [class.hidden]="!isActive(2)"
+    aria-labelledby="accordion-collapse-heading-2"
+  >
+    <div class="p-5 border border-b-0 text-black dark:text-black">
+      <p class="mb-2 text-black dark:text-black">
+        Implemented JWT-based authentication with JavaScript and MySQL,
+        enhancing security and session integrity.
+      </p>
+    </div>
+  </div>
 
-          <!-- Item 3 -->
-          <h2 id="accordion-collapse-heading-3">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
-              data-accordion-target="#accordion-collapse-body-3"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-3"
-            >
-              <span><strong>Full-Stack Integration</strong></span>
-              <svg
-                data-accordion-icon
-                class="w-3 h-3 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-3"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-3"
-          >
-            <div class="p-5 border border-b-0 text-black dark:text-black">
-              <p class="mb-2 text-black dark:text-black">
-                Worked on end-to-end development, ensuring smooth communication
-                between front-end and back-end components.
-              </p>
-            </div>
-          </div>
+  <h2 id="accordion-collapse-heading-3">
+    <button
+      type="button"
+      (click)="togglePanel(3)"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
+      [attr.aria-expanded]="isActive(3)"
+      aria-controls="accordion-collapse-body-3"
+    >
+      <span><strong>Full-Stack Integration</strong></span>
+      <svg
+        class="w-3 h-3 shrink-0 transform transition-transform duration-300"
+        [class.rotate-180]="isActive(3)"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-collapse-body-3"
+    [class.hidden]="!isActive(3)"
+    aria-labelledby="accordion-collapse-heading-3"
+  >
+    <div class="p-5 border border-b-0 text-black dark:text-black">
+      <p class="mb-2 text-black dark:text-black">
+        Worked on end-to-end development, ensuring smooth communication between
+        front-end and back-end components.
+      </p>
+    </div>
+  </div>
 
-          <!-- Item 4 -->
-          <h2 id="accordion-collapse-heading-4">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
-              data-accordion-target="#accordion-collapse-body-4"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-4"
-            >
-              <span><strong>Front-End Development</strong></span>
-              <svg
-                data-accordion-icon
-                class="w-3 h-3 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-4"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-4"
-          >
-            <div class="p-5 border text-black dark:text-black">
-              <p class="mb-2 text-black dark:text-black">
-                Utilized HTML, CSS, JavaScript, TypeScript, Angular, Tailwind
-                CSS, and Bootstrap to create mobile-responsive interfaces.
-              </p>
-            </div>
-          </div>
+  <h2 id="accordion-collapse-heading-4">
+    <button
+      type="button"
+      (click)="togglePanel(4)"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
+      [attr.aria-expanded]="isActive(4)"
+      aria-controls="accordion-collapse-body-4"
+    >
+      <span><strong>Front-End Development</strong></span>
+      <svg
+        class="w-3 h-3 shrink-0 transform transition-transform duration-300"
+        [class.rotate-180]="isActive(4)"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-collapse-body-4"
+    [class.hidden]="!isActive(4)"
+    aria-labelledby="accordion-collapse-heading-4"
+  >
+    <div class="p-5 border text-black dark:text-black">
+      <p class="mb-2 text-black dark:text-black">
+        Utilized HTML, CSS, JavaScript, TypeScript, Angular, Tailwind CSS, and
+        Bootstrap to create mobile-responsive interfaces.
+      </p>
+    </div>
+  </div>
 
-          <!-- Item 5 -->
-          <h2 id="accordion-collapse-heading-5">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
-              data-accordion-target="#accordion-collapse-body-5"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-5"
-            >
-              <span><strong>Back-End Development</strong></span>
-              <svg
-                data-accordion-icon
-                class="w-3 h-3 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-5"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-5"
-          >
-            <div class="p-5 border text-black dark:text-black">
-              <p class="mb-2 text-black dark:text-black">
-                Developed scalable server-side applications with Node.js and
-                Express.js, ensuring high performance and security.
-              </p>
-            </div>
-          </div>
+  <h2 id="accordion-collapse-heading-5">
+    <button
+      type="button"
+      (click)="togglePanel(5)"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
+      [attr.aria-expanded]="isActive(5)"
+      aria-controls="accordion-collapse-body-5"
+    >
+      <span><strong>Back-End Development</strong></span>
+      <svg
+        class="w-3 h-3 shrink-0 transform transition-transform duration-300"
+        [class.rotate-180]="isActive(5)"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-collapse-body-5"
+    [class.hidden]="!isActive(5)"
+    aria-labelledby="accordion-collapse-heading-5"
+  >
+    <div class="p-5 border text-black dark:text-black">
+      <p class="mb-2 text-black dark:text-black">
+        Developed scalable server-side applications with Node.js and Express.js,
+        ensuring high performance and security.
+      </p>
+    </div>
+  </div>
 
-          <!-- Item 6 -->
-          <h2 id="accordion-collapse-heading-6">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
-              data-accordion-target="#accordion-collapse-body-6"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-6"
-            >
-              <span><strong>Database Management</strong></span>
-              <svg
-                data-accordion-icon
-                class="w-3 h-3 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 10 6"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5 5 1 1 5"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-6"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-6"
-          >
-            <div class="p-5 border border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-black dark:text-black">
-                Designed and optimized databases with MySQL, ensuring data
-                integrity and efficient queries.
-              </p>
-            </div>
-          </div>
-        </div>
+  <h2 id="accordion-collapse-heading-6">
+    <button
+      type="button"
+      (click)="togglePanel(6)"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-black focus:ring-4 focus:ring-black dark:focus:ring-black dark:border-black dark:text-black hover:bg-black dark:hover:bg-black gap-3"
+      [attr.aria-expanded]="isActive(6)"
+      aria-controls="accordion-collapse-body-6"
+    >
+      <span><strong>Database Management</strong></span>
+      <svg
+        class="w-3 h-3 shrink-0 transform transition-transform duration-300"
+        [class.rotate-180]="isActive(6)"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-collapse-body-6"
+    [class.hidden]="!isActive(6)"
+    aria-labelledby="accordion-collapse-heading-6"
+  >
+    <div class="p-5 border border-gray-200 dark:border-gray-700">
+      <p class="mb-2 text-black dark:text-black">
+        Designed and optimized databases with MySQL, ensuring data integrity and
+        efficient queries.
+      </p>
+    </div>
+  </div>
+</div>
+
 
         <p class="mb-4" style="font-size: 17px">
           <br /><br />
           <strong>Let’s build the future together! </strong>
         </p>
       </div>
+
+      
     </div>
   </div>
 </section>

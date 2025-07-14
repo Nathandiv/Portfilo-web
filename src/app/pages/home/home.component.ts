@@ -45,4 +45,18 @@ export class HomeComponent implements OnInit {
       startDelay: 1000,
     });
   }
+
+   activePanels: Set<number> = new Set();
+
+  togglePanel(index: number): void {
+    if (this.activePanels.has(index)) {
+      this.activePanels.delete(index);
+    } else {
+      this.activePanels.add(index);
+    }
+  }
+
+  isActive(index: number): boolean {
+    return this.activePanels.has(index);
+  }
 }
